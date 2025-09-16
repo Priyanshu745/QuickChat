@@ -63,7 +63,7 @@ npm run build # Builds production-ready frontend
 ### 3. Setup the backend
 
 ```bash
-cd ../server
+cd server
 npm install
 node server.js
 ```
