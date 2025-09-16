@@ -20,7 +20,7 @@ It supports authentication, user profiles, and real-time messaging with a clean 
 ## 📂 Project Structure
 
 ```
-chatapp/
+QuickChat/
 │── client/          # Frontend (React + Vite)
 │   ├── src/
 │   │   ├── assets/  # Images, icons, logos
@@ -47,8 +47,8 @@ chatapp/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/chatapp.git
-cd chatapp
+git clone https://github.com/Priyanshu745/QuickChat.git
+
 ```
 
 ### 2. Setup the frontend
