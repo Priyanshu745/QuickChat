@@ -55,11 +55,13 @@ await connnectDB();
 // Creating the Port:
 const PORT = process.env.PORT || 5000;
 
-if(process.env.NODE_ENV != "production") {
-    server.listen(PORT, () => {
-        console.log("Server is Running on PORT: " + PORT);
-    })
-}
+
+const HOST = process.env.NODE_ENV === "production" ? "0.0.0.0" : "localhost";
+
+server.listen(PORT, HOST, () => {
+  console.log(`Server is Running on http://${HOST}:${PORT}`);
+});
+
 
 // Export server for vercel
 export default server;
